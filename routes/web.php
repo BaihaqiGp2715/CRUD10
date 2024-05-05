@@ -2,5 +2,5 @@
 
 use Illuminate\Support\Facades\Route;
 
-//route resource
-Route::resource('/posts', \App\Http\Controllers\PostController::class);
+// Route resource
+Route::resource('posts', \App\Http\Controllers\PostController::class)->only(['index']);
